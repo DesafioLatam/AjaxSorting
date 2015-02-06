@@ -1,0 +1,8 @@
+<li class="well" id="toy-<%= toy.id %>">
+  <%= toy.name %>
+  <%= toy.position %>
+  <%= image_tag(toy.image, style: "width:200px") %>
+  <%= link_to 'Show', toy %>
+  <%= link_to 'Edit', edit_toy_path(toy) %>
+  <%= link_to 'Destroy', toy, method: :delete, data: { confirm: 'Are you sure?' } %>
+</li>
